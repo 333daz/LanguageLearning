@@ -1,0 +1,20 @@
+<div id="bodyContainer" align="center">
+
+<table border="1">
+	<tr>
+		<td>Lesson Name</td>
+		<td>Score</td>
+		<td>Status</td>
+		<td>Level</td>
+		<td>Date</td>
+	</tr>
+	<tr ng-repeat="status in statusSet">
+		<td>{{status.lesson}}</td>
+		<td>{{status.score}}</td>
+		<td>{{(status.passed == 'yes')? "passed":"failed"}}</td>
+		<td>{{status.level}}</td>
+		<td>{{status.date}}</td>
+	</tr>
+</table>
+
+</div>

@@ -1,0 +1,77 @@
+#filterTable {
+	width: 50%;
+	margin-top: 10px;
+}
+
+#filterTable td {
+	padding: 10px;
+	width: 50%;
+}
+
+#filterTable select {
+	height: 30px;
+	width: 100%;
+	border: 2px solid #a1a1a1;
+   border-radius: 7px;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+#filterTable label {
+	font-size: 16px;
+	font-family: copperplate;
+	font-weight: bold;
+}
+
+#quizDiv {
+	width:50%;
+	border-radius: 10px; "
+}
+
+#quizTable {
+	width: 100%;
+	font-family: Avenir;
+	font-weight: 500;
+
+}
+
+#quizTable tr {
+
+}
+
+#quizTable td {
+	padding: 1em;
+   margin-bottom: 1em;
+   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.questionDiv {
+	padding: 10px 0px;
+}
+
+.radioDiv, .checkBoxDiv {
+	float: left;
+	margin: 10px 20px;
+}
+
+#notificationDiv {
+	position: fixed;
+	top: -1000px;
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+	background-color: transparent;
+	/*right: -200px;*/
+	transition: top 0.5s;
+
+}
+
+#notificationBar {
+	height: 60px;
+	background-color: #CB2C31;
+}
+
+#notificationBar h1 {
+	float: left;
+	margin-left: 20px;
+}

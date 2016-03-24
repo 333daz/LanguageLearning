@@ -1,0 +1,211 @@
+{
+	"lessons": ["Basics", "Conversation", "Verb"],
+
+	"Basics": [
+		{
+			"level": "Beginner",
+			"questionSet": [
+				{
+					"question": "Translate \"el servicio\" to English.",
+					"type": "textField",
+					"answer": "the service"
+				},
+				{
+					"question": "aproximadamente",
+					"type": "radio",
+					"options": ["appropriately", "possibly", "approximately", "probably"],
+					"answer": "approximately"
+				},
+				{
+					"question": "letrero",
+					"type": "checkBox",
+					"options": ["sign", "post", "notice", "alphabet"],
+					"answer": ["sign","notice"]
+				}
+			]
+		},
+		{
+			"level": "Intermediate",
+			"questionSet": [
+				{
+					"question": "Translate \"para soportar\" to English.",
+					"type": "textField",
+					"answer": "to withstand"
+				},
+				{
+					"question": "Tengo una pregunta para usted.",
+					"type": "radio",
+					"options": ["Ask me a question", "I have a question for you.", "Do you have any questions?", "I have an answer"],
+					"answer": "I have a question for you."
+				},
+				{
+					"question": "mañana",
+					"type": "checkBox",
+					"options": ["morning", "today", "tomorrow", "evening"],
+					"answer": ["morning", "tomorrow"]
+				}
+			]
+		},
+		{
+			"level": "Advanced",
+			"questionSet": [
+				{
+					"question": "Translate \"los números pares\" to English.",
+					"type": "textField",
+					"answer": "the even numbers"
+				},
+				{
+					"question": "salado",
+					"type": "radio",
+					"options": ["salad", "salty", "sugar", "sweet"],
+					"answer": "salty"
+				},
+				{
+					"question": "igualmente",
+					"type": "checkBox",
+					"options": ["Have a nice day", "likewise (formal)", "you too(courteous reply)", "illuminate"],
+					"answer": ["likewise (formal)", "you too(courteous reply)"]
+				}
+			]
+		}
+	],
+
+	"Conversation": [
+		{
+			"level": "Beginner",
+			"questionSet": [
+				{
+					"question": "Translate \"la presidencia\" to English.",
+					"type": "textField",
+					"answer": "the presidency"
+				},
+				{
+					"question": "madrastra",
+					"type": "radio",
+					"options": ["mother in law", "sister in law", "mother", "stepmother"],
+					"answer": "stepmother"
+				},
+				{
+					"question": "mañana",
+					"type": "checkBox",
+					"options": ["morning", "today", "tomorrow", "evening"],
+					"answer": ["morning", "tomorrow"]
+				}
+			]
+		},
+		{
+			"level": "Intermediate",
+			"questionSet": [
+				{
+					"question": "Translate \"conocimiento intelectual\" to English.",
+					"type": "textField",
+					"answer": "intellectual knowledge"
+				},
+				{
+					"question": "salado",
+					"type": "radio",
+					"options": ["salad", "salty", "sugar", "sweet"],
+					"answer": "salty"
+				},
+				{
+					"question": "bocadillo",
+					"type": "checkBox",
+					"options": ["sandwich", "tidbit", "snack", "dessert"],
+					"answer":["sandwich", "tidbit", "snack"]
+				}
+			]
+		},
+		{
+			"level": "Advanced",
+			"questionSet": [
+				{
+					"question": "Translate \"el estudio\" to English.",
+					"type": "textField",
+					"answer": "the study"
+				},
+				{
+					"question": "novio",
+					"type": "radio",
+					"options": ["uncle", "girlfriend", "boyfriend", "dad"],
+					"answer": "boyfriend"
+				},
+				{
+					"question": "cousin (choose spanish)",
+					"type": "checkBox",
+					"options": ["prima", "primo", "prometido", "cuñada"],
+					"answer": ["prima", "primo"]
+				}
+			]
+		}
+	],
+
+	"Verb": [
+		{
+			"level": "Beginner",
+			"questionSet": [
+				{
+					"question": "Translate \"lunes\" to English.",
+					"type": "textField",
+					"answer": "monday"
+				},
+				{
+					"question": "dia",
+					"type": "radio",
+					"options": ["light", "lamp", "day", "darling"],
+					"answer": "day"
+				},
+				{
+					"question": "yo hablo",
+					"type": "checkBox",
+					"options": ["I speak", "I am speaking", "please speak", "I don't speak"],
+					"answer": ["I speak", "I am speaking"]
+				}
+			]
+		},
+		{
+			"level": "Intermediate",
+			"questionSet": [
+				{
+					"question": "Translate \"por ejemplo\" to English.",
+					"type": "textField",
+					"answer": "for example"
+				},
+				{
+					"question": "the chair(translate to spanish)",
+					"type": "radio",
+					"options": ["la silla", "el sillón", "la mesa", "el basurero"],
+					"answer": "la silla"
+				},
+				{
+					"question": "yo hablo",
+					"type": "checkBox",
+					"options": ["I speak", "I am speaking", "please speak", "I don't speak"],
+					"answer": ["I speak", "I am speaking"]
+				}
+			]
+		},
+		{
+			"level": "Advanced",
+			"questionSet": [
+				{
+					"question": "Translate \"económicamente",
+					"type": "textField",
+					"answer": "economically"
+				},
+				{
+					"question": "muy aliados",
+					"type": "radio",
+					"options": ["very close", "seperated", "fake", "as it is"],
+					"answer": "very close"
+				},
+				{
+					"question": "ella",
+					"type": "checkBox",
+					"options": ["she-personal nominative pronoun","mine","her personal disjunctive pronoun","the name"],
+					"answer":  ["she-personal nominative pronoun","her personal disjunctive pronoun"]
+				}
+			]
+		}
+	]
+
+} 

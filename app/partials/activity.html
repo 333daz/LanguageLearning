@@ -1,0 +1,82 @@
+<head>
+	<title>Daily Activity</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/activity.css">
+    <link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<div id="bodyContainer" align="center">
+        <table id="filterTable">
+        	<td>
+        		<label>Lesson name:</label>
+        		<div>
+                    <select ng-model="lessonNameField" ng-change="selectQuiz()">
+                        <!-- <option value="">Select</option> -->
+                        <option ng-repeat="lessonName in lessonNameList" value={{lessonName}}>
+                        {{lessonName}}
+                        </option>
+                    </select>
+                </div>
+        	</td>
+        	<td>
+        		<label>Level:</label>
+        		<div>
+                    <select ng-model="levelField" ng-change="selectQuiz()">
+                    <!-- <option value="">Select</option> -->
+                        <option value="Beginner">Beginner</option>
+                        <option value="Intermediate">Intermediate</option>
+                        <option value="Advanced">Advanced</option>
+                    </select>
+                </div>
+        		
+        	</td>
+        </table>
+
+        <div id="quizDiv">
+            <table ng-show="(!currentQuestionSet.length == 0)" id="quizTable" border="0">
+
+                <tr ng-repeat="questionSet in currentQuestionSet">
+                    
+                    <td>
+                        <div class="questionDiv">
+                            <i class="fa fa-question"></i>  {{questionSet.question}}
+                        </div>
+                        <div ng-show="questionSet.type == 'textField'">
+                            <input ng-model="answers.answerSet[$index]" type="text" style="width: 50%; margin-left: 15px"></input>
+                        </div>
+
+                        <div ng-if="questionSet.type == 'radio'">
+                            <div class="radioDiv" ng-repeat="option in questionSet.options">
+                                <input type="radio" ng-model="answers.answerSet[$parent.$index]" value={{option}} name="inputRadio"></input>{{option}}</div>
+                        </div>
+
+                        <div ng-if="questionSet.type == 'checkBox'">
+                            <div class="checkBoxDiv" ng-repeat="option in questionSet.options">
+                                <input type="checkBox" checklist-value={{option}} name="inputCheckBox" ng-click="checkListToggled(this, answers.check)"></input>{{option}}</div>
+                        </div>
+                    </td>
+                    <td style="border: 0px;" ng-hide="correctionList.answers.length == 0">
+                        <div>
+                            <img ng-if="correctionList.answers[$index] == ''" src="assets/images/correct.png">
+                            <img ng-show="(!correctionList.answers[$index] == '')" src="assets/images/wrong.png">
+                            <p ng-repeat="answer in correctionList.answers[$index]">{{answer}}  </p>        
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" style="box-shadow: none;">
+                        <button ng-click="submitQuiz($parent.answer)">Submit</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div id="notificationDiv">
+        <div id="notificationBar">
+            <h1 ng-show="status.passed == 'yes'">Good Work...!!!!!</h1>
+            <h1 ng-show="status.passed == 'no'">Better Luck Next Time...!!</h1>
+            <h2 style="float: left; margin-left: 50px;">Your score is:{{status.score}}</h2>
+            <i style="float: right;margin: 20px;" class="fa fa fa-times fa-lg" ng-click="closeNotification()"></i>
+        </div>
+    </div>
+</body>
